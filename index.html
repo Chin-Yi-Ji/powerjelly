@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerJelly - 黑武士羽毛球專業品牌</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="圖片/Power Jelly_LOGO_Fin_black.svg" alt="POWER JELLY" class="nav-logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#brand" class="nav-link">品牌介紹</a></li>
+                <li><a href="#products" class="nav-link">產品介紹</a></li>
+                <li><a href="#dealers" class="nav-link">購買資訊</a></li>
+                <li><a href="#contact" class="nav-link">聯絡我們</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 區塊 -->
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-logo">
+                <div class="main-logo">
+                    <img src="圖片/Power Jelly_LOGO_Fin_black.svg" alt="POWER JELLY" class="hero-logo-img">
+                </div>
+
+            </div>
+            <button class="cta-button" onclick="scrollToSection('products')">
+                探索產品 <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        <div class="hero-background">
+            <div class="floating-shuttlecock"></div>
+        </div>
+    </section>
+
+    <!-- 品牌介紹 -->
+    <section id="brand" class="brand-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>關於 POWER JELLY</h2>
+            </div>
+            <div class="brand-content">
+                <div class="brand-text" data-aos="fade-right">
+                    <h3>我們的使命</h3>
+                    <p>POWER JELLY 承載你對運動的熱情，賦能你的運動表現，成為你的後盾。</p>
+                    <h3>黑武士系列</h3>
+                    <p>DARK WARRIORS 系列採用精心挑選頂級羽毛，確保每一顆球都能提供最佳的飛行穩定性和耐用性。</p>
+                    <button class="secondary-button" onclick="scrollToSection('products')">
+                        我們的產品 <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="brand-image" data-aos="fade-left">
+                    <div class="brand-logo-container">
+                        <div class="brand-logo">
+                            <img src="圖片/Power Jelly_LOGO_Fin_black.svg" alt="POWER JELLY" class="brand-logo-img">
+                        </div>
+                        <div class="brand-slogan">DARK WARRIORS</div>
+                        <div class="brand-subtitle">SMASH TO WIN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 產品介紹 -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>產品系列</h2>
+                <p>專業級羽毛球，滿足不同需求</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100" onclick="openProductModal('d01')">
+                    <div class="product-image">
+                        <div class="product-brand-logo">
+                            <img src="圖片/Power Jelly_LOGO_Fin_black.svg" alt="POWER JELLY" class="product-logo-img">
+                        </div>
+                        <div class="product-logo">DARK WARRIORS</div>
+                        <div class="product-model">D01</div>
+                        <div class="product-slogan">SMASH TO WIN</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>D01</h3>
+                        <p class="product-type">鴨毛比賽級</p>
+                        <p class="product-description">一般零打、中階選手、羽球教學</p>
+                        <div class="product-features">
+                            <span class="feature">耐用</span>
+                            <span class="feature">穩定</span>
+                            <span class="feature">鴨毛</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200" onclick="openProductModal('gpro')">
+                    <div class="product-image">
+                        <div class="product-brand-logo">
+                            <img src="圖片/Power Jelly_LOGO_Fin_black.svg" alt="POWER JELLY" class="product-logo-img">
+                        </div>
+                        <div class="product-logo">DARK WARRIORS</div>
+                        <div class="product-model">G PRO</div>
+                        <div class="product-slogan">TOP GOOSE FEATHER</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>G PRO</h3>
+                        <p class="product-type">鵝毛比賽級</p>
+                        <p class="product-description">中階以上零打、業餘選手比</p>
+                        <div class="product-features">
+                            <span class="feature">CP值</span>
+                            <span class="feature">專業</span>
+                            <span class="feature">鵝毛</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300" onclick="openProductModal('g01')">
+                    <div class="product-image">
+                        <div class="product-brand-logo">
+                            <img src="圖片/Power Jelly_LOGO_Fin_black.svg" alt="POWER JELLY" class="product-logo-img">
+                        </div>
+                        <div class="product-logo">DARK WARRIORS</div>
+                        <div class="product-model">G01</div>
+                        <div class="product-slogan">TOP GOOSE FEATHER</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>G01</h3>
+                        <p class="product-type">鵝毛比賽級</p>
+                        <p class="product-description">進階零打、專業選手</p>
+                        <div class="product-features">
+                            <span class="feature">平衡</span>
+                            <span class="feature">耐用</span>
+                            <span class="feature">鵝毛</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400" onclick="openProductModal('gtop')">
+                    <div class="product-image">
+                        <div class="product-brand-logo">
+                            <img src="圖片/Power Jelly_LOGO_Fin_black.svg" alt="POWER JELLY" class="product-logo-img">
+                        </div>
+                        <div class="product-logo">DARK WARRIORS</div>
+                        <div class="product-model">G TOP</div>
+                        <div class="product-slogan">TOP GOOSE FEATHER</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>G TOP</h3>
+                        <p class="product-type">鵝毛比賽級</p>
+                        <p class="product-description">高階零打、力與速全面釋放</p>
+                        <div class="product-features">
+                            <span class="feature">頂級</span>
+                            <span class="feature">競技</span>
+                            <span class="feature">鵝毛</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-aos="fade-up" data-aos-delay="500" onclick="openProductModal('gprime')">
+                    <div class="product-image">
+                        <div class="product-brand-logo">
+                            <img src="圖片/Power Jelly_LOGO_Fin_black.svg" alt="POWER JELLY" class="product-logo-img">
+                        </div>
+                        <div class="product-logo">DARK WARRIORS</div>
+                        <div class="product-model">G PRIME</div>
+                        <div class="product-slogan">BEST GOOSE FEATHER</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>G PRIME</h3>
+                        <p class="product-type">鵝毛比賽級</p>
+                        <p class="product-description">旗艦產品，無與倫比的品質</p>
+                        <div class="product-features">
+                            <span class="feature">旗艦</span>
+                            <span class="feature">極致</span>
+                            <span class="feature">鵝毛</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 經銷商 -->
+    <section id="dealers" class="dealers-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>購買資訊</h2>
+                <p>尋找離您最近的 POWER JELLY 購買管道</p>
+            </div>
+            <div class="dealers-grid">
+                <div class="dealer-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="dealer-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>徐以倫</h3>
+                    <p class="dealer-type">個人經銷商</p>
+                    <p class="dealer-phone">
+                        <i class="fas fa-phone"></i>
+                        +886 938805235
+                    </p>
+                    <p class="dealer-email">
+                        <i class="fas fa-envelope"></i>
+                        powerjelly.tw@gmail.com
+                    </p>
+                    <button class="contact-button" onclick="contactDealer('徐以倫', '+886 938805235')">
+                        <i class="fas fa-phone"></i> 立即聯絡
+                    </button>
+                </div>
+
+                <div class="dealer-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="dealer-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>張懿</h3>
+                    <p class="dealer-type">個人經銷商</p>
+                    <p class="dealer-phone">
+                        <i class="fas fa-phone"></i>
+                        +886 938805235
+                    </p>
+                    <p class="dealer-email">
+                        <i class="fas fa-envelope"></i>
+                        powerjelly.tw@gmail.com
+                    </p>
+                    <button class="contact-button" onclick="contactDealer('張懿', '+886 938805235')">
+                        <i class="fas fa-phone"></i> 立即聯絡
+                    </button>
+                </div>
+
+                <div class="dealer-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="dealer-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>洪肇陽</h3>
+                    <p class="dealer-type">個人經銷商</p>
+                    <p class="dealer-phone">
+                        <i class="fas fa-phone"></i>
+                        +886 938805235
+                    </p>
+                    <p class="dealer-email">
+                        <i class="fas fa-envelope"></i>
+                        powerjelly.tw@gmail.com
+                    </p>
+                    <button class="contact-button" onclick="contactDealer('洪肇陽', '+886 938805235')">
+                        <i class="fas fa-phone"></i> 立即聯絡
+                    </button>
+                </div>
+
+                <div class="dealer-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="dealer-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>劉韋志</h3>
+                    <p class="dealer-type">個人經銷商</p>
+                    <p class="dealer-phone">
+                        <i class="fas fa-phone"></i>
+                        +886 938805235
+                    </p>
+                    <p class="dealer-email">
+                        <i class="fas fa-envelope"></i>
+                        powerjelly.tw@gmail.com
+                    </p>
+                    <button class="contact-button" onclick="contactDealer('劉韋志', '+886 938805235')">
+                        <i class="fas fa-phone"></i> 立即聯絡
+                    </button>
+                </div>
+
+                <div class="dealer-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="dealer-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>曾相傑</h3>
+                    <p class="dealer-type">個人經銷商</p>
+                    <p class="dealer-phone">
+                        <i class="fas fa-phone"></i>
+                        +886 938805235
+                    </p>
+                    <p class="dealer-email">
+                        <i class="fas fa-envelope"></i>
+                        powerjelly.tw@gmail.com
+                    </p>
+                    <button class="contact-button" onclick="contactDealer('范承翰', '+886 938805235')">
+                        <i class="fas fa-phone"></i> 立即聯絡
+                    </button>
+                </div>
+
+                <div class="dealer-card featured" data-aos="fade-up" data-aos-delay="600">
+                    <div class="dealer-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>致勝關鍵</h3>
+                    <p class="dealer-type">實體店面</p>
+                    <p class="dealer-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        324桃園市平鎮區平東路一段104號
+                    </p>
+                    <p class="dealer-phone">
+                        <i class="fas fa-phone"></i>
+                        0911 793 196
+                    </p>
+                    <p class="dealer-email">
+                        <i class="fas fa-envelope"></i>
+                        powerjelly.tw@gmail.com
+                    </p>
+                    <button class="contact-button featured" onclick="contactDealer('致勝關鍵', '0911 793 196')">
+                        <i class="fas fa-phone"></i> 立即聯絡
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>聯絡我們</h2>
+                <p>有任何問題或建議，歡迎與我們聯繫</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>PowerJelly 公司資訊</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>公司地址</h4>
+                            <p>435台中市梧棲區南簡里民安三街99號</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>聯絡電話</h4>
+                            <p>+886 938805235</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>電子郵件</h4>
+                            <p>powerjelly.tw@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <h4>公司名稱</h4>
+                            <p>尹山國際股份有限公司</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>營業時間</h4>
+                            <p>週一至週五 9:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">電子郵件</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主旨</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            送出訊息 <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 產品詳細 Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- 動態內容 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="圖片/Power Jelly_LOGO_Fin_black.svg" alt="POWER JELLY" class="footer-logo-img">
+                    </div>
+                    <p>DARK WARRIORS 系列 - 專業羽毛球品牌，為您的比賽而生</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="#brand">品牌介紹</a></li>
+                        <li><a href="#products">產品介紹</a></li>
+                        <li><a href="#dealers">購買資訊</a></li>
+                        <li><a href="#contact">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡資訊</h4>
+                    <p><i class="fas fa-phone"></i> +886 938805235</p>
+                    <p><i class="fas fa-envelope"></i> powerjelly.tw@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PowerJelly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
